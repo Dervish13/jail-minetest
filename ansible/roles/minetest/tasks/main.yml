@@ -1,0 +1,5 @@
+---
+- name: install minetest packages
+  with_items: "{{ minetest_packages }}"
+  package:
+    name: "{{ item.name }}"
